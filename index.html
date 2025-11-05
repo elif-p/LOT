@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conectividad Avanzada  IoT y Experiencias Inmersivas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #00BFFF, #001F3F, #00FF7F);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Título principal flotante */
+    header {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      animation: flotar 3s ease-in-out infinite;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00FF7F;
+      text-shadow: 0 0 15px rgba(0, 255, 127, 0.8);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #B0EFFF;
+      margin-top: 10px;
+    }
+
+    @keyframes flotar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Contenedor de los cuadros */
+    .contenedor-botones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1000px;
+      justify-items: center;
+    }
+
+    /* Botones estilo cuadros */
+    .boton {
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px solid #00FF7F;
+      border-radius: 15px;
+      color: #00FF7F;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 2rem;
+      width: 100%;
+      max-width: 230px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 127, 0.3);
+    }
+
+    .boton:hover {
+      transform: translateY(-10px) scale(1.05);
+      background-color: rgba(0, 255, 127, 0.2);
+      box-shadow: 0 0 25px rgba(0, 255, 127, 0.6);
+      color: #fff;
+    }
+
+    /* Pie de página */
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      text-align: center;
+      color: #00FF7F;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+    }
+
+    /* Distribución especial en móvil */
+    @media (max-width: 768px) {
+      .contenedor-botones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        justify-items: center;
+      }
+
+      /* El último botón ocupa el centro abajo */
+      .boton:nth-child(5) {
+        grid-column: span 2;
+        justify-self: center;
+        max-width: 230px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Conectividad Avanzada loT y Experiencias inmercivas</h1>
+    <p>Sean bienvenidos a este espacio de exploración tecnológica, </p>
+	 <p>donde la conectividad avanzada mediante el Internet de las Cosas  </p> 
+		 <p> (IoT) transforma  nuestro entorno en sistemas inteligentes, interactivos y adaptativos.</p>
+  </header>
+
+  <div class="contenedor-botones">
+    <a href="pagina1.html" class="boton">Información General</a>
+    <a href="pagina2.html" class="boton">Video Informativo</a>
+    <a href="pagina3.html" class="boton">Tabla de Datos</a>
+    <a href="formulario.html" class="boton">Formulario</a>
+    <a href="pagina5.html" class="boton">Información del Creador</a>
+  </div>
+
+  <footer>
+    © 2025 | Diseñado por Jeffersson Soriano | seccion 2-1
+  </footer>
+
+</body>
+</html>
